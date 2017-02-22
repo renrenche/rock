@@ -1,0 +1,10 @@
+{
+  "index": {
+    "js": "//www.<%= name %>..com//rock/dist/index-1b4fab7aeb.js",
+    "css": "//www.<%= name %>..com//rock/dist/css/index-b525df7e3f.css"
+  },
+  "common": {
+    "js": "//www.<%= name %>..com//rock/dist/common-82faf96799.js",
+    "css": "//www.<%= name %>..com//rock/dist/css/common-d41d8cd98f.css"
+  }
+}

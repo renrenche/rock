@@ -1,0 +1,19 @@
+{
+    "apps" : [
+        {
+            "name" : "<%= name %>",
+            "script": "index.js",
+            "out_file": "./logs/<%= name %>.log",
+            "error_file": "./logs/<%= name %>.error.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss",
+            "instances" : 0,
+            "exec_mode" : "cluster",
+            "merge_logs" : true,
+            "max_memory_restart": "500M",
+            "env": {
+                "NODE_ENV": "production",
+                "ENABLE_SSL": true,
+            }
+        }
+    ]
+}

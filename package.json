@@ -1,0 +1,26 @@
+{
+  "name": "generator-rock",
+  "version": "1.0.5",
+  "description": "Nodejs fullstack generator, using Express, Webpack, with React or Vue as client framework",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "fullstack",
+    "webpack",
+    "express",
+    "react",
+    "vue"
+  ],
+  "author": "liujing",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^0.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:orange727/rock.git"
+  }
+}
