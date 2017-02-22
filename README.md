@@ -53,6 +53,8 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 * Client Side
 	yo rock:component
 
+### 文档
+[01]('/docs/01%20Configuration%20vs.%20Definition.md')
 ### 项目示例
 ```
 .
