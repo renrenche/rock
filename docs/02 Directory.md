@@ -1,6 +1,16 @@
 ## 02 目录结构
 
-### client/ 前端目录
+> 本篇将介绍Rock生成的项目的目录结构与功能。
+
+1. <a href="#client/ 前端目录">client/ 前端目录</a>
+2. <a href="#server/ 后端目录">server/ 后端目录</a>
+3. <a href="#config/ 配置webpack/ 构建">config/ 配置</a>
+4. <a href="#scripts/ 脚本">scripts/ 脚本</a>
+5. <a href="#webpack/ 构建">webpack/ 构建</a>
+6. <a href="#public/ 编译后的静态资源">public/ 编译后的静态资源</a>
+4. <a href="#整体项目目录一览">整体项目目录一览</a>
+
+### <a name="client/ 前端目录">client/ 前端目录</a>
 该目录下存放前端（浏览器端）文件。
 
 注意，在文件的命名时，请遵循：01_编码规范，文件命名，及其他约定.md
@@ -34,7 +44,7 @@
     ├── index.spec.js    // 测试
     └── style.less       // 样式
 
-### server/ 后端目录
+### <a name="server/ 后端目录">server/ 后端目录</a>
 该目录下存放服务器端文件。
 
     server/
@@ -47,7 +57,7 @@
     │   └── index.js
     └── server.js     // Node.js入口文件
 
-### config/ 配置
+### <a name="config/ 配置">config/ 配置</a>
 该目录下存放配置文件，使用[config模块](https://github.com/typesafehub/config)进行管理.
 
     config
@@ -55,7 +65,7 @@
     ├── development.js
     └── production.js
 
-### scripts/ 脚本
+### <a name="scripts/ 脚本">scripts/ 脚本</a>
 该目录下存放自动化脚本文件，使用 [scripty](https://github.com/testdouble/scripty) 和 [npm scripts](https://docs.npmjs.com/misc/scripts) 进行管理。
 
 涉及自动构建，部署，自动化测试。使用时需结合具体项目情况，此处仅供参考。
@@ -75,7 +85,7 @@
         ├── coverage.sh
         └── unit.sh
 
-### webpack/ 构建
+### <a name="webpack/ 构建">webpack/ 构建</a>
 该目录下存放webpack的配置文件，区分运行环境，可自行追加其他环境的配置。
 
 `webpack/webpack-dev-server.js` 是开发环境下为静态文件提供服务的工具。线上服务不适用该功能，建议将静态资源上传至CDN。如果暂时没有CDN服务，可先运行 `npm run build:webpack` 命令，再修改 `server.js` 中Server静态文件相关代码。
@@ -86,11 +96,11 @@
     ├── webpack.dev.js
     └── webpack.make.js
 
-### public/ 编译后的静态资源
+### <a name="public/ 编译后的静态资源">public/ 编译后的静态资源</a>
 
 该目录下存放静态资源文件。如 .css, .js, .png 。
 
-### 整体项目目录一览
+### <a name="整体项目目录一览">整体项目目录一览</a>
 
     ├── client
     │   ├── common

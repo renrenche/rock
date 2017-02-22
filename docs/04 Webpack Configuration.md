@@ -2,9 +2,12 @@
 
 > 使用Rock生成的项目，支持ES6语法, React, Vue, Less, Css, 图片。同时为生产环境提供了代码压缩，图片压缩，为开发环境提供了热加载，自动刷新，source-map的配置。
 
-本篇将对这些配置做简单说说明。
+> 本篇将对这些配置做简单说说明。
 
-### 提供的配置
+1. <a href="#提供的配置">提供的配置</a>
+2. <a href="#说明">说明</a>
+
+### <a name="提供的配置">提供的配置</a>
 **Javascript**
 
 * Babel
@@ -41,7 +44,7 @@
 * Live-Realod
 
 
-### 说明
+### <a name="说明">说明</a>
 **生产环境编译后的文件有以下特点：**
 
 * 文件名追加Hash值，以便资源更新。如[name]-[chunkhash:10].js。
@@ -70,7 +73,7 @@
 
 
 
-提供的配置                  | 用到的插件
+提供的配置                  | 所用的插件
 ---------------------------|----------------------------------------------------------
 babel                      |[babel-loader](http://webpack.github.io/docs/usage.html#transpiling-es2015-using-babel-loader),[babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/),[babel-preset-stage-0](https://babeljs.io/docs/plugins/preset-stage-0/),[transform-object-assign](https://babeljs.io/docs/plugins/transform-object-assign/)
 react                      |[babel-loader](http://webpack.github.io/docs/usage.html#transpiling-es2015-using-babel-loader),[babel-preset-es2015](https://babeljs.io/docs/plugins/preset-es2015/),[babel-preset-stage-0](https://babeljs.io/docs/plugins/preset-stage-0/),[transform-object-assign](https://babeljs.io/docs/plugins/transform-object-assign/),[babel-preset-react](https://babeljs.io/docs/plugins/preset-react/)
