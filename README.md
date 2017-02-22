@@ -1,6 +1,6 @@
 ## Rock
 
-> Rock is a Javascript fullstack generator equipped with following techs: Express, Ejs, Webpack and Gulp. You can choose React, Vue, or jQuery for client frameworks as you wish because webpack configuration has been ready for those.
+> Rock is a Javascript fullstack generator equipped with following techs: Express, Ejs, Webpack and Gulp. You can choose React, Vue, or jQuery for client frameworks as you wish because webpack configuration has been ready for that.
 
 Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服务。
 
@@ -16,6 +16,7 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 	* [Webpack](https://webpack.js.org/) (main)
 	* [Gulp](http://gulpjs.com/)
 * Testing
+	* [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), [Sinon](http://sinonjs.org/)
 * Client
 	* Scripts: Javascript ([Babel](https://babeljs.io/))
 	* Module Systems: [Webpack](https://webpack.js.org/)
@@ -23,7 +24,7 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 	* Stylesheets: [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS), [Less](http://lesscss.org/)
 	* Static-Files-Server: [Webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)
 * Server
-	* Scripts: Javascript (Wexpressithout [Babel](https://babeljs.io/))
+	* Scripts: Javascript (no [Babel](https://babeljs.io/))
 	* Framework: [Express](http://expressjs.com/)
 * Development
 	* Lint: [Eslint](http://eslint.org/)
@@ -48,16 +49,22 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 		npm run dev
 4. 访问 `http://localhost:8081`
 
-
 ### 其他命令
 * Client Side
 	yo rock:component
 
 ### 文档
-[01]('/docs/01%20Configuration%20vs.%20Definition.md')
+1. [Configuration vs. Definition](/docs/01%20Configuration%20vs.%20Definition.md)
+2. [Directory](/docs/02%20Directory.md)
+3. [Client Module System](/docs/03%20Client%20modules.md)
+4. [Webpack Configuration](/docs/04%20Webpack%20Configuration.md)
+5. [Effective Ops](r/docs/05%20Effective%20Ops.md)
+6. [Tests](/docs/06%20Tests.md)
+101. [Let's Rock](/docs/101%20Let's%20Rock.md)
+
+
 ### 项目示例
 ```
-.
 ├── client
 │   ├── common
 │   │   ├── index.js
