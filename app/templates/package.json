@@ -1,5 +1,5 @@
 {
-  "name": "rock",
+  "name": "<%= name %>",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
     "test:coverage": "scripty",
     "test:unit": "scripty",
     "alog": "tail -f logs/access.log.`date +%Y-%m-%d`",
-    "plog": "tail -f logs/rock.error.log logs/rock.log",
+    "plog": "tail -f logs/<%= name %>.error.log logs/<%= name %>.log",
     "flog": "tail -f logs/framework.log.`date +%Y-%m-%d`",
     "logs": "tail -f logs/*"
   },
@@ -66,7 +66,6 @@
     "eslint": "^3.14.0",
     "eslint-config-renrenche": "^1.3.0",
     "eslint-loader": "^1.5.0",
-    "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
@@ -96,6 +95,8 @@
     "nodemon": "^1.10.0",
     "postcss-loader": "^1.0.0",
     "pre-commit": "^1.1.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "run-sequence": "^1.2.2",
     "scripty": "^1.6.0",
     "sinon": "^1.17.7",

@@ -49,8 +49,8 @@ module.exports = function makeWebpackConfig(options) {
         chunkFilename: BUILD ? 'chunk/[name]-[chunkhash:10].js' : 'chunk/[name].js',
 
         // Absolute path of output directory
-        path: path.resolve(__dirname, '../public/dist/rock'),
-        publicPath: BUILD ? `${config.cdn.domain}/rock/dist/` : `//${ip.address()}:${config.ports.assets}/dist/rock/`,
+        path: path.resolve(__dirname, '../public/dist/<%= name %>'),
+        publicPath: BUILD ? `${config.cdn.domain}/<%= name %>/dist/` : `//${ip.address()}:${config.ports.assets}/dist/<%= name %>/`,
     };
 
     /**

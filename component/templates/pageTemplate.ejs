@@ -2,6 +2,6 @@
 <% block('head').append(`<link type="text/css" href="${assetsConfig.<?= name ?>.css}" rel="stylesheet" charset="utf-8">`) %>
 
 <h2>当前页面是 <?= name ?></h2>
-<? if (type === 'vue') { ?><div id="app"></div><? } ?>
+<? if (type === 'vue' || type === 'react') { ?><div id="app"></div><? } ?>
 
 <% block('footer').append(`<script src="${assetsConfig.<?= name ?>.js}"></script>`) %>

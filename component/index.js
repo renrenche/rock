@@ -27,10 +27,11 @@ module.exports = generators.Base.extend({
         {
             type: 'list',
             name: 'type',
-            message: '你想哪种方式(框架)来组织你的组件？(建议使用Vue或者ES6)',
-            choices: ['Vue', 'ES6_modules', 'CommonJs', 'AMD'],
+            message: '你想哪种方式(框架)来组织你的组件？(建议使用React, Vue 或 ES6)',
+            choices: ['React', 'Vue', 'ES6_modules', 'CommonJs', 'AMD'],
             filter: val => {
               return {
+                'React': 'react',
                 'Vue': 'vue',
                 'ES6_modules': 'es6',
                 'CommonJs': 'commonjs',
@@ -108,6 +109,20 @@ module.exports = generators.Base.extend({
         if (needJs) {
             const className = name.slice(0, 1).toUpperCase() + name.slice(1);
             switch(type) {
+                case 'react':
+                    this.fs.copyTpl(
+                        this.templatePath('example.jsx'),
+                        this.destinationPath(`${destDir}/index.jsx`),
+                        { name: className }
+                    );
+                    if (isPage) {
+                        this.fs.copyTpl(
+                            this.templatePath('js_es6.js'),
+                            this.destinationPath(`${destDir}/index.js`),
+                            { name: className, isPage, type, needStyle }
+                        );
+                    }
+                    break;
                 case 'vue':
                     this.fs.copyTpl(
                         this.templatePath('example.vue'),
