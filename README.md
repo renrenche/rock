@@ -50,8 +50,11 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 4. 访问 `http://localhost:8081`
 
 ### 其他命令
-* Client Side
-	yo rock:component
+* 生成前端组件
+  
+  		yo rock:component
+
+![yo rock:component](/docs/image/rock-tools.gif?raw=true)
 
 ### 开发文档
 1. [Configuration vs. Definition](/docs/01%20Configuration%20vs.%20Definition.md)

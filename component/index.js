@@ -107,7 +107,7 @@ module.exports = generators.Base.extend({
         }
 
         if (needJs) {
-            const className = name.slice(0, 1).toUpperCase() + name.slice(1);
+            const className = name.split('-').map((item) => item.slice(0, 1).toUpperCase() + item.slice(1)).join('');
             switch(type) {
                 case 'react':
                     this.fs.copyTpl(
