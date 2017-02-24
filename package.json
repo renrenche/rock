@@ -1,6 +1,6 @@
 {
   "name": "generator-rock",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Nodejs fullstack generator, using Express, Webpack, with React or Vue as client framework",
   "main": "app/index.js",
   "scripts": {
