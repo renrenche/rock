@@ -11,7 +11,7 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 ### 演示
 ![Get Start](/docs/image/rock-get-start.gif?raw=true)
 
-### 支持的配置
+### 支持配置
 * Build Systems
 	* [Webpack](https://webpack.js.org/) (main)
 	* [Gulp](http://gulpjs.com/)
@@ -50,10 +50,13 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 4. 访问 `http://localhost:8081`
 
 ### 其他命令
-* Client Side
-	yo rock:component
+* 生成前端组件
+  
+  		yo rock:component
 
-### 文档
+![yo rock:component](/docs/image/rock-tools.gif?raw=true)
+
+### 开发文档
 1. [Configuration vs. Definition](/docs/01%20Configuration%20vs.%20Definition.md)
 2. [Directory](/docs/02%20Directory.md)
 3. [Client Module System](/docs/03%20Client%20modules.md)
@@ -121,11 +124,18 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 
 - [babel](https://github.com/babel/babel/tree/master/packages): Turn ES6 code into readable vanilla ES5 with source maps
 - [eslint](https://github.com/eslint/eslint): An AST-based pattern checker for JavaScript.
-- [scripty](https://github.com/testdouble/scripty): Because no one should be shell-scripting inside a JSON file.
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [less](https://github.com/less/less.js): Leaner CSS
 - [gulp](https://github.com/gulpjs/gulp): The streaming build system
 - [webpack](https://github.com/webpack/webpack): Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.
 - [webpack-dev-server](https://github.com/webpack/webpack-dev-server): Serves a webpack app. Updates the browser on changes.
+
+## Thanks
+
+* wangshijun@renrenche.com
+* pengrognshu@renrenche.com
+* zhaolin@renrenche.com
+* jiarui@renrenche.com
+
 
