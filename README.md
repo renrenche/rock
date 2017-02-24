@@ -128,3 +128,11 @@ Rock是一个Express + Webpack `脚手架`。可生成简单，稳定的Node服�
 - [webpack](https://github.com/webpack/webpack): Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.
 - [webpack-dev-server](https://github.com/webpack/webpack-dev-server): Serves a webpack app. Updates the browser on changes.
 
+## Thanks
+
+* wangshijun@renrenche.com
+* pengrognshu@renrenche.com
+* zhaolin@renrenche.com
+* jiarui@renrenche.com
+
+

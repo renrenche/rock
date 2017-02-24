@@ -6,6 +6,6 @@ export default class Example extends React.Component {
     }
 
     render() {
-        return (<h3>This is rendered by React: <br /> {this.state.message}</h3>);
+        return (<h3>以下内容由React渲染 <br /> {this.state.message}</h3>);
     }
 }

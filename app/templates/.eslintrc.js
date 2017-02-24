@@ -1,6 +1,9 @@
 module.exports = {
     parser: 'babel-eslint',
     plugins: [
+        // supports extracting and linting the JavaScript inside *.vue files
+        // https://github.com/BenoitZugmeyer/eslint-plugin-html
+        'html',
         // React specific linting rules
         // https://github.com/yannickcr/eslint-plugin-react
         'react',
